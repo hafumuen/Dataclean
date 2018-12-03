@@ -1,0 +1,28 @@
+# This is the codebook in this assignment to help reviewers better understand my flow of thoughts when dealing with the questions in Getting and Cleaning Data Project.
+
+# I am sorry that the use of variable is not well developed and remains to be modified and simplified afterwards via practice.
+
+# First, two packages were installed and the file was downloaded then unzipped by the if function in the current directory.
+One can specify the directory if necessary.
+
+# Read the files from "test" and "train" folders.
+Combine the column names from features with  correspondent values separately via data.frame function.
+Personalize the first two column names as subject_id and activity_type.
+
+# Q1
+"Data merged" is the result of using rbind to merge two data frames with the same headers
+
+#Q2
+Keep the mean and std values only by using grep function and assign it as "mean_std "
+data_mean_std is the first two columns combined with mean_std
+
+#Q3
+activity.labels is the characters read from file which contains the numbers with their corresponding activity type
+Replace the number with detailed activity type 
+
+#Q4
+By using gsub function, all the abbrevation is replaced.
+
+#Q5
+
+make the tidy data by ddply function
